@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:background="@color/baby_powder"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="2dp">
+
+        <ImageView
+            android:id="@+id/iv_imageView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:src="@drawable/project2"
+            android:scaleType="fitCenter"/>
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/iv_imageView"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Smile Crowdfunding"
+            android:layout_marginTop="5dp"
+            android:textSize="22sp"
+            android:padding="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_title"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="This foundation will bring smile on there faces"
+            android:textSize="18sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_totalValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Total Value:"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_totalValue_Value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="5000"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            app:layout_constraintEnd_toStartOf="@+id/tv_collectedValue"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toRightOf="@+id/tv_totalValue"
+            app:layout_constraintStart_toEndOf="@+id/tv_totalValue"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description" />
+
+        <TextView
+            android:id="@+id/tv_collectedValue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintRight_toLeftOf="@+id/tv_collectedValue_Value"
+            android:text="Collected Value:"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_collectedValue_Value"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_description"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="5000"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+        <TextView
+            android:id="@+id/tv_startDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalValue_Value"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="Start Date:"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_startDateValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalValue_Value"
+            app:layout_constraintLeft_toRightOf="@+id/tv_startDate"
+            android:text="05/05/2018"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:padding="5dp"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_endDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalValue_Value"
+            app:layout_constraintRight_toLeftOf="@+id/tv_endDate_Value"
+            android:text="End Date:"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/tv_endDate_Value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/tv_totalValue_Value"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="10/06/2018"
+            android:textSize="14sp"
+            android:padding="5dp"
+            android:textColor="@color/black"
+            android:layout_marginRight="5dp"
+            />
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
